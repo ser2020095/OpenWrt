@@ -1,0 +1,51 @@
+From 3e4bcf764b565ce4193646de1f6328f734ff7bbb Mon Sep 17 00:00:00 2001
+From: Zhijun You <hujy652@gmail.com>
+Date: Tue, 25 May 2021 13:22:41 +0800
+Subject: [PATCH] ath10k: switch to ieee80211_tx_status_ext()
+
+Makes station look up faster?
+
+Signed-off-by: Zhijun You <hujy652@gmail.com>
+---
+ drivers/net/wireless/ath/ath10k/txrx.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+
+--- a/drivers/net/wireless/ath/ath10k/txrx.c
++++ b/drivers/net/wireless/ath/ath10k/txrx.c
+@@ -51,7 +51,7 @@ int ath10k_txrx_tx_unref(struct ath10k_h
+ 	struct ath10k_txq *artxq;
+ 	struct sk_buff *msdu;
+ 	u8 flags;
+-	struct ieee80211_vif *vif;
++	struct ieee80211_tx_status status = { };
+ 
+ 	ath10k_dbg(ar, ATH10K_DBG_HTT,
+ 		   "htt tx completion msdu_id %u status %d\n",
+@@ -78,11 +78,10 @@ int ath10k_txrx_tx_unref(struct ath10k_h
+ 	if (txq) {
+ 		artxq = (void *)txq->drv_priv;
+ 		artxq->num_fw_queued--;
++		status.sta = txq->sta;
+ 	}
+ 
+ 	flags = skb_cb->flags;
+-	vif = skb_cb->vif;
+-
+ 	ath10k_htt_tx_free_msdu_id(htt, tx_done->msdu_id);
+ 	ath10k_htt_tx_dec_pending(htt);
+ 	if (htt->num_pending_tx == 0)
+@@ -133,10 +132,10 @@ int ath10k_txrx_tx_unref(struct ath10k_h
+ 		info->status.is_valid_ack_signal = true;
+ 	}
+ 
+-	if (info->flags & IEEE80211_TX_CTL_HW_80211_ENCAP)
+-		ieee80211_tx_status_8023(htt->ar->hw, vif, msdu);
+-	else
+-		ieee80211_tx_status(htt->ar->hw, msdu);
++	status.skb = msdu;
++	status.info = info;
++
++	ieee80211_tx_status_ext(htt->ar->hw, &status);
+ 	/* we do not own the msdu anymore */
+ 
+ 	return 0;
