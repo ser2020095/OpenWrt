@@ -1,0 +1,531 @@
+Package: adblock
+Version: 4.1.2-1
+Depends: libc, jshn, jsonfilter, coreutils, coreutils-sort, ca-bundle, opkg
+License: GPL-3.0-or-later
+Section: net
+Architecture: all
+Installed-Size: 20361
+Filename: adblock_4.1.2-1_all.ipk
+Size: 21361
+SHA256sum: d499e52630c856288a8c4ce3a95325b759568fe714ea1a5274150d54e417916a
+Description:  Powerful adblock script to block ad/abuse domains via dnsmasq, unbound, named or kresd.
+ The script supports many domain blacklist sites plus manual black- and whitelist overrides.
+ Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
+ 
+
+Package: banip
+Version: 0.7.8-1
+Depends: libc, jshn, jsonfilter, ip, ipset, iptables, ca-bundle
+License: GPL-3.0-or-later
+Section: net
+Architecture: all
+Installed-Size: 21064
+Filename: banip_0.7.8-1_all.ipk
+Size: 22042
+SHA256sum: 6556553063734e46ae4fdd2a7fe3b3e85d8c47d58ef905de8d5bed6344c9f09b
+Description:  Powerful banIP script to block ip addresses via ipsets.
+ The script supports many ip blacklist sites plus manual black- and whitelist overrides.
+ Please see https://github.com/openwrt/packages/blob/master/net/banip/files/README.md for further information.
+ 
+
+Package: bcp38
+Version: 5-6
+Depends: libc, ipset
+Section: net
+Architecture: all
+Installed-Size: 2070
+Filename: bcp38_5-6_all.ipk
+Size: 3040
+SHA256sum: 7b3276403289232603abf2b7a05387e7394e557f5903959aa89b8f1bc9551b9b
+Description:  bcp38 implements IETF BCP38 for home routers.
+ See https://tools.ietf.org/html/bcp38.
+ 
+ This package provides BCP38 for IPv4 only - IPv6 uses source 
+ specific default routes, so no firewall configuration is needed.
+
+Package: cgi-io
+Version: 2020-10-27-ab4c3471-19
+Depends: libc, libubox20210516, libubus20210215
+License: GPL-2.0-or-later
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 8440
+Filename: cgi-io_2020-10-27-ab4c3471-19_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9251
+SHA256sum: 9fb7cdaf08458a9ad2867e9fb0e8a31ec801159eff06580323730d443b45d235
+Description:  This package contains an cgi utility that is useful for up/downloading files
+
+Package: collectd-mod-conntrack
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1744
+Filename: collectd-mod-conntrack_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2524
+SHA256sum: 67cda9d4f3ee326ea3cf68cdc71611d8cf012c86f6a437d203438a810cf30f0b
+Description:  connection tracking table size input plugin
+
+Package: collectd-mod-cpu
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3920
+Filename: collectd-mod-cpu_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4674
+SHA256sum: b030ae1d2a436765bac6c72656d1d12ba71568bb8965381bb7aed55341cbe876
+Description:  CPU input plugin
+
+Package: collectd-mod-cpufreq
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2762
+Filename: collectd-mod-cpufreq_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3550
+SHA256sum: 244bb1a16b93258e881d8e96161a47896adff626827e858b285f295aca688c86
+Description:  CPU Freq input plugin
+
+Package: collectd-mod-dhcpleases
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1700
+Filename: collectd-mod-dhcpleases_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2502
+SHA256sum: a3b5ddc5926161c52505a93cb0fa95ad82fdda7d098963ad2165a27999ded8f3
+Description:  show dhcpleases plugin
+
+Package: collectd-mod-entropy
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1402
+Filename: collectd-mod-entropy_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2189
+SHA256sum: deaf202e4c05be4b064e1f4ac66222dd3db58a2458f80edd5992bd2f49a9d326
+Description:  Entropy amount input plugin
+
+Package: collectd-mod-exec
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 23191
+Filename: collectd-mod-exec_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 23955
+SHA256sum: af7587a45c43d9f521f806c795535bc7f6f93cf7fdfbd87fbb014d3fa99c9991
+Description:  process exec input plugin
+
+Package: collectd-mod-interface
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3385
+Filename: collectd-mod-interface_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4171
+SHA256sum: 3321f40f7f80cee9e96f8c881ca898aed8b01290e8078a2495e71002c35ac4a0
+Description:  network interfaces input plugin
+
+Package: collectd-mod-iwinfo
+Version: 5.12.0-9
+Depends: libc, collectd, libiwinfo20210430
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3474
+Filename: collectd-mod-iwinfo_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4273
+SHA256sum: b6f84efa609e659af6ccfde4ae228fe04ffd4c3ca6d0c8ba8ba7914413beede6
+Description:  libiwinfo wireless statistics plugin
+
+Package: collectd-mod-load
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1839
+Filename: collectd-mod-load_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2611
+SHA256sum: e8dbf388a384c8c4d6d507c2a0449d300f65018cfb7e7bbc532f2f7fbaf07902
+Description:  system load input plugin
+
+Package: collectd-mod-memory
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2656
+Filename: collectd-mod-memory_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3445
+SHA256sum: 129a0fb344de9722762fc7be78da924f50f3913622d87d1132d27f9f07ee4426
+Description:  physical memory usage input plugin
+
+Package: collectd-mod-network
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 14988
+Filename: collectd-mod-network_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 15703
+SHA256sum: 4c3956b9202edd7339c01e189f424b8f67c085ca0b1e826c80f769037c9efb4d
+Description:  network input/output plugin
+
+Package: collectd-mod-ping
+Version: 5.12.0-9
+Depends: libc, collectd, liboping
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5207
+Filename: collectd-mod-ping_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6003
+SHA256sum: cb74be79237710bdba8a22ff8058ecc6afad28e6ff19ffea2659669e79fef2ed
+Description:  ping status input plugin
+
+Package: collectd-mod-rrdtool
+Version: 5.12.0-9
+Depends: libc, collectd, librrd1
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 11257
+Filename: collectd-mod-rrdtool_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 12061
+SHA256sum: f803dfcd0735f94eb4a5d8c0be837c7e59d8616ac520b6d54613b83fd905d72b
+Description:  RRDtool output plugin
+
+Package: collectd-mod-sqm
+Version: 5.12.0-9
+Depends: libc, collectd-mod-exec
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1302
+Filename: collectd-mod-sqm_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2102
+SHA256sum: 5daf48c2cdce76662b754cf8d07af555078636293078705ff9c1bd82f017a41e
+Description:  SQM/qdisc collection plugin
+
+Package: collectd-mod-thermal
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3898
+Filename: collectd-mod-thermal_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4684
+SHA256sum: 37194841faedc634cef890da5b494ca948467b63abb7cbb51c102dcbe1f1377b
+Description:  system temperatures input plugin
+
+Package: collectd-mod-uptime
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1490
+Filename: collectd-mod-uptime_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2268
+SHA256sum: a47bd92494cd7b3228de009c368ab54352a0a97ee965945a7e35adf1b142597e
+Description:  uptime status input plugin
+
+Package: collectd-mod-wireless
+Version: 5.12.0-9
+Depends: libc, collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2174
+Filename: collectd-mod-wireless_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2975
+SHA256sum: 470dfce101e948fe8d73e3216ec5ddc23544a1a2599409a94eda0959665734e8
+Description:  wireless status input plugin
+
+Package: collectd
+Version: 5.12.0-9
+Depends: libc, libpthread, zlib, libltdl7, libip4tc2, jshn
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 87186
+Filename: collectd_5.12.0-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 88059
+SHA256sum: 1fab4df21b8a7ae071841650aa35aaf9f788c2cadd87b17cf00f821421ca2e10
+Description:  collectd is a small daemon which collects system information periodically
+ and provides mechanismns to store the values in a variety of ways.
+
+Package: coreutils-sort
+Version: 8.32-6
+Depends: libc, coreutils, libpthread
+Alternatives: 300:/usr/bin/sort:/usr/libexec/sort-coreutils
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 46694
+Filename: coreutils-sort_8.32-6_arm_cortex-a15_neon-vfpv4.ipk
+Size: 47501
+SHA256sum: a919768601f6de5c6818a87170739865dd8c2c831ae856d86e2b3ac291b37c1a
+Description:  Full version of standard GNU sort utility.
+
+Package: coreutils
+Version: 8.32-6
+Depends: libc
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 104
+Filename: coreutils_8.32-6_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1001
+SHA256sum: f12631241ee1e951125a4a3490858dcefefa57eb07549c086a4579a98d3c0601
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: dawn
+Version: 2020-12-31-8ce09d64-1
+Depends: libc, libubus20210215, libubox20210516, libblobmsg-json20210516, libuci20130104, libgcrypt, libiwinfo20210430, umdns
+License: GPL-2.0-only
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 30958
+Filename: dawn_2020-12-31-8ce09d64-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 31862
+SHA256sum: dd7c9a171a2fa072ffd35024310079536093cd3b250c84c68127cfec7f81615c
+Description:  This package implements a decentralized wireless daemon.
+
+Package: ddns-scripts-services
+Version: 2.8.2-9
+Depends: libc
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 3980
+Filename: ddns-scripts-services_2.8.2-9_all.ipk
+Size: 4604
+SHA256sum: e8ec92fc7041fdc42436e1fbf762d46d0c67e3b2c6854762fa50313eab80d393
+Description:  Dynamic DNS Client definitions for supported services
+
+Package: ddns-scripts
+Version: 2.8.2-9
+Depends: libc, ddns-scripts-services
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 23775
+Filename: ddns-scripts_2.8.2-9_all.ipk
+Size: 24802
+SHA256sum: e83dc4cd9020ae34b409da0687862d5aaa4d8aad3baa898803e832c78a3584bd
+Description:  Dynamic DNS Client scripts (with IPv6 support)
+ A highly configurable set of scripts for doing dynamic dns updates.
+ - IPv6 support
+ - DNS server support
+ - Glue Record support (require BIND host or KNOT host)
+ - DNS requests via TCP
+ - Proxy server support
+ - log file support
+ - support to run once
+ Version: 2.8.2-9
+ Info   : https://openwrt.org/docs/guide-user/services/ddns/client
+
+Package: htop
+Version: 3.0.5-1
+Depends: libc, libncurses6
+License: GPL-2.0-or-later
+Section: admin
+CPE-ID: cpe:/a:htop:htop
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 75913
+Filename: htop_3.0.5-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 76804
+SHA256sum: d4794b08a884719894f0c8908991e277f2bffdd8808c839b7895694e1eb09a02
+Description:  Htop is an ncursed-based process viewer similar to top, but
+ it allows to scroll the list vertically and horizontally to
+ see all processes and their full command lines.
+
+Package: irqbalance
+Version: 1.8.0-1
+Depends: libc
+License: GPLv2
+Section: utils
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 48649
+Filename: irqbalance_1.8.0-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 49545
+SHA256sum: 9c5cd63af08d22f0a4ca3da9800de3bb16aac02921914725cdb1ac84074fad7e
+Description:  The purpose of irqbalance is to distribute hardware interrupts across
+ processors/cores on a multiprocessor/multicore system in order to
+ increase performance.
+
+Package: libgcrypt
+Version: 1.9.3-1
+Depends: libc, libgpg-error
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnupg:libgcrypt
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 376836
+Filename: libgcrypt_1.9.3-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 376069
+SHA256sum: b31dfcefd4b32a78ebcdfa60b413d23c481c9de2d089dd3e2160e3f4e58a79ea
+Description:  This is a general purpose cryptographic library based on the code from
+ GnuPG. It provides functions for all cryptograhic building blocks:
+ symmetric ciphers (AES, DES, Arcfour, CAST5), hash algorithms (MD5, SHA-1,
+ RIPE-MD160, SHA-224/256, SHA-384/512), MACs (HMAC for all hash
+ algorithms), public key algorithms (RSA, DSA), large integer functions,
+ random numbers and a lot of supporting functions. Some algorithms have
+ been disabled to reduce size (Blowfish, Twofish, Serpent,
+ RC2, SEED, Camellia, CRC, MD4, TIGER-192, Whirlpool, ElGamal, ECC).
+
+Package: libgpg-error
+Version: 1.42-1
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 48352
+Filename: libgpg-error_1.42-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 49350
+SHA256sum: b717c4a25845d6487affa1c9313ce90c012cb8d650617b826550de9b0e7ecc36
+Description:  An helper library for common error codes and descriptions.
+ This is a library that defines common error values for all GnuPG
+ components. Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ Libksba, DirMngr, Pinentry, SmartCard Daemon and possibly more in the
+ future.
+
+Package: liboping
+Version: 1.10.0-2
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6867
+Filename: liboping_1.10.0-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 7678
+SHA256sum: 0d5dd18ee56e61fc5931f5be32f3e6d3c14b093a154e43e0ef90b8981fd4fcd9
+Description:  C library to generate ICMP echo requests.
+
+Package: librrd1
+Version: 1.0.50-3
+Depends: libc, zlib
+Section: libs
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 130787
+Filename: librrd1_1.0.50-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 131286
+SHA256sum: 77e806efc2624c7bb47a44bedd321a212c113d18b66c590fa83db249e3502751
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains a shared library, used by other programs.
+
+Package: nlbwmon
+Version: 2020-04-11.1-34a18876-3
+Depends: libc, libubox20210516, libnl-tiny1, zlib, kmod-nf-conntrack-netlink
+License: ISC
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 19086
+Filename: nlbwmon_2020-04-11.1-34a18876-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 19975
+SHA256sum: 208c5e38829b2c016fcd14de88e5a2175a56b6b66e3a2eda2e8152bc8aec7154
+Description:  OpenWrt Traffic Usage Monitor
+
+Package: ntfs-3g
+Version: 2017.3.23-4-fuseint
+Depends: libc, kmod-fuse, libpthread
+License: GPL-2.0-only LGPL-2.1-or-later
+Section: utils
+CPE-ID: cpe:/a:ntfs-3g:ntfs-3g
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 184946
+Filename: ntfs-3g_2017.3.23-4-fuseint_arm_cortex-a15_neon-vfpv4.ipk
+Size: 185623
+SHA256sum: c29e4e08b5874cb5bee98e5c6002740f33a07e86d8e6ffd22008307b54a7c68f
+Description:  Ntfs-3g is a NTFS driver, which can create, remove, rename,
+ move files, directories, hard links, and streams. It can read
+ and write files, including streams and sparse files. It can
+ handle special files like symbolic links, devices, and FIFOs.
+ Moreover it can also read transparently compressed files.
+ 
+ Contains:
+ - ntfs-3g
+ - ntfs-3g.probe
+ - mount.ntfs-3g (symlink to ntfs-3g)
+ 
+
+Package: openvpn-openssl
+Version: 2.5.2-1
+Depends: libc, kmod-tun, libopenssl1.1
+Provides: openvpn, openvpn-crypto
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:openvpn:openvpn
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 203593
+Filename: openvpn-openssl_2.5.2-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 204163
+SHA256sum: e172714cb9a7ad51db3349b30e23447d5acc3f78e534b41c494aa4855ae879a5
+Description:  Open source VPN solution using OpenSSL
+
+Package: rrdtool1
+Version: 1.0.50-3
+Depends: libc, librrd1
+Section: utils
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 10330
+Filename: rrdtool1_1.0.50-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 11481
+SHA256sum: 5290dcbe62d41625f554a2d0c19ec993bd9c6cc97785176634023c64e734c950
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains command line tools used to manage RRDs.
+
+Package: sqm-scripts
+Version: 1.5.0-2
+Depends: libc, tc, kmod-sched-core, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra, kmod-sched-cake
+License: GPL-2.0-only
+Section: net
+Architecture: all
+Installed-Size: 17894
+Filename: sqm-scripts_1.5.0-2_all.ipk
+Size: 18794
+SHA256sum: 7f03234ebb2326b73bff4a2b2b228428e4fa38f935a5fa40a7b0f3d6af924bce
+Description:  A set of scripts that does simple SQM configuration.
+
